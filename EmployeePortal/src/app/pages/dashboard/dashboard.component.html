@@ -1,0 +1,17 @@
+<!-- <app-nav-bar> -->
+<br>
+<div class="container-fluid">
+    <div class="card-group">
+        <div class="card" *ngFor="let emp of empData">
+            <!-- <img src="" class="card-img-top" alt="..."> -->
+            <img [src]="emp.image" alt="">
+            <div class="card-body">
+                <h5 class="card-title">{{emp.jobTitle}}</h5>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="card-body-secondary">{{emp.email}}</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<button type="submit" class="btn btn-sucess" routerLink="/login" >Submit</button>
